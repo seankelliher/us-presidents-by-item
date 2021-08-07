@@ -76,7 +76,7 @@ ul {
 }
 
 .selected {
-    color: #C43E00; /*amber 900 dark*/
+    color: #F23005; /*orange*/
 }
 
 section {
@@ -108,7 +108,7 @@ section {
 }
 
 #empty-msg {
-    width: 100%;
+    width: 90%;
     margin: 0 2.5%;
     padding: 0 2.5%;
     color: #616161; /*grey 700*/
@@ -128,36 +128,49 @@ section {
 
 .president {
     width: 100%;
-    margin: 1.2em 0;
+    margin: .5em 0;
     padding: 0;
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;/*main axis*/
     align-items: flex-start; /*cross axis*/
-    background: #FAFAFA; /*grey 50*/
+    background: #F2F4F8; /*shiny grey*/
     border: 1px solid #EEE; /*grey 200*/
     position: relative;
 }
 
 figure {
-    margin: 0;
-    padding: 1.5em 5% 0 5%;
+    margin: .5em 0 0 0;
+    padding: .5em 5% 0 5%;
     flex: initial; /*flex: 0 1 auto*/
 }
 
 .left {
-    margin: .5em 0;
+    margin: 0;
     padding: 0;
     flex: initial; /*flex: 0 1 auto*/
 }
 
 .right {
+    width: 10%;
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 0;
+    top: 5px;
     right: 5px;
+    background: #33B1FF; /*medium blue*/
+    border-radius: 5px;
+    text-align: center;
+}
+
+.right:hover {
+    cursor: pointer;
+    background: #2B96D9; /*slightly darker blue*/
+}
+
+.right p {
+    pointer-events: none;
 }
 
 @media all and (min-width: 300px) {
@@ -168,40 +181,17 @@ figure {
     .left {
         width: 50%;
     }
-
-    .right {
-        width: 10%;
-        text-align: center;
-    }
 }
 
 @media all and (min-width: 600px) {
     figure {
         width: 15%;
     }
-
-    .left {
-        width: 50%;
-    }
-
-    .right {
-        width: 10%;
-        text-align: center;
-    }
 }
 
 @media all and (min-width: 900px) {
     figure {
         width: 20%;
-    }
-
-    .left {
-        width: 50%;
-    }
-
-    .right {
-        width: 10%;
-        text-align: center;
     }
 }
 
@@ -222,25 +212,23 @@ h3 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.2;
     font-weight: 700;
-    color: #1976D2; /*blue 700*/
 }
 
 p {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.8;
+    line-height: 1.6;
     font-weight: 400;
 }
 
 .right p {
     font-weight: 600;
-    color: #8D6E63; /*brown 400*/
 }
 
 li {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 2;
-    font-weight: 400;
-    color: #616161; /*grey 700*/
+    font-weight: 600;
+    text-transform: lowercase;
 }
 
 li:hover {

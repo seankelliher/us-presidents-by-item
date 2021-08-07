@@ -5,11 +5,14 @@ Interactive component about demographics of the 45 US Presidents.
 
 ## Project Screen Shots
 
-![screen shot of project](/screenshots/us-presidents-3.0-screenshot1.jpg)
+* Starting view - birthplace, all presidents.
+![screen shot of project](/screenshots/us-presidents-3.0-screenshot1.png?s=600)
 
-![screen shot of project](/screenshots/us-presidents-3.0-screenshot2.jpg)
+* View with previous job, filtered for congress.
+![screen shot of project](/screenshots/us-presidents-3.0-screenshot2.png?s=600)
 
-![screen shot of project](/screenshots/us-presidents-3.0-screenshot3.jpg)
+* View with departure, filtered for not nominated. Also, Fillmore's "dates of service" are displayed. (Clicking "potus #" shows/hides "dates of service").
+![screen shot of project](/screenshots/us-presidents-3.0-screenshot3.png?s=600)
 
 ## Installation and Setup Instructions
 

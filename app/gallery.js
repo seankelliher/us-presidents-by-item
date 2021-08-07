@@ -39,15 +39,18 @@ function createGallery(etid) {
         //Create "content" elements.
         const presPhoto = document.createElement("img");
         const presName = document.createElement("h3");
-        const presNumber = document.createElement("p");
-        const presInaug = document.createElement("p");
+        const presDates = document.createElement("p");
         const presTrait = document.createElement("p");
+        const presNumber = document.createElement("p");
+
+        //Hide the dates of service.
+        presDates.style.display = "none";
 
         //Assign content to "content" elements.
         presPhoto.src = index.photo;
         presName.textContent = index.name;
+        presDates.textContent = index.serviceDates;
         presNumber.textContent = `${index.id}`;
-        presInaug.textContent = index.yearInaugurated;
 
         //Receive id from list item user clicked.
         //Assign matching text and class.
@@ -57,7 +60,7 @@ function createGallery(etid) {
         //Append elements.
         figure.appendChild(presPhoto);
         left.appendChild(presName);
-        left.appendChild(presInaug);
+        left.appendChild(presDates);
         left.appendChild(presTrait);
         right.appendChild(presNumber);
 

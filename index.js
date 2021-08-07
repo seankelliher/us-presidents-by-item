@@ -6,6 +6,7 @@ import {
 import {clearGallery, createGallery} from "./app/gallery.js";
 import {filterGallery} from "./app/filters.js";
 import {hideEmpty} from "./app/empty.js";
+import {monitorNumbers} from "./app/dates.js";
 
 //After DOM loads...
 document.addEventListener("DOMContentLoaded", function () {
@@ -32,6 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
     //Hide "empty" message.
     //Appears when list items user clicks return no presidents.
     hideEmpty();
+
+    //Watch "potus numbers" for clicks.
+    monitorNumbers();
 
     //Watch primary list for clicks.
     primaryList.addEventListener("click", function (event) {

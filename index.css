@@ -169,10 +169,6 @@ figure {
     background: #2B96D9; /*slightly darker blue*/
 }
 
-.right p {
-    pointer-events: none;
-}
-
 @media all and (min-width: 300px) {
     figure {
         width: 25%;
@@ -222,6 +218,7 @@ p {
 
 .right p {
     font-weight: 600;
+    pointer-events: none;
 }
 
 li {
